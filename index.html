@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>calendar</title>
+        <style>
+        cores{
+            #68B2F8 RGB 104 178 248
+            #506EE5 RGB 80 110 229
+            #7037CD RGB 112 55 205
+            #651F71 RGB 101 31 113
+            #1D0C20 RGB 29 12 32
+        }
+        head {
+            
+        }
+        body {
+            /*background-color:#506EE5;*/
+            background: rgb(101,31,113);
+            background: radial-gradient(circle, rgba(101,31,113,1) 8%, rgba(79,43,163,1) 47%, rgba(80,110,229,1) 87%);
+            }
+        body>#p1 {
+            color:#651F71;
+            background:#68B2F8;
+            text-align:center;
+            font-size:25px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            border-radius:5px;
+        }
+	body>#p1 {
+	    opacity:1;
+	    transition: opacity 1s cubic-bezier(0.12, 0, 0.39, 0) 0s;
+	}
+	body>#p1:hover {
+	    opacity:0.6;
+	}
+        th,td {
+            border-radius:6px;
+            color:white;
+            bbox-shadow:0 4px 8px 0 rgba(101,31,113,0.2), 0 6px 20px 0 rgba(101,31,113,1.5);
+        }
+	th,td {
+	    opacity:1;
+	    transition: opacity 1s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0ms;
+	}
+	th:hover,td:hover {
+	    opacity:0.6;
+	    ccolor:#ff00e1;
+	    background-color:#a4cef5;
+	    text-shadow: -5px 3px 4px #001c8a;
+	    word-spacing: 2px;
+	    cursor: crosshair;
+	    /*text-transform: uppercase;*/
+	}
+        table {
+            bbackground:#7037CD;/*roxo fundo quadro*/
+            color:white;
+            position:absolute;
+            height:30%;
+            width:98%;
+            text-align:center;
+            border-radius:10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        #trh {/*header*/
+            background:#651F71;
+            width:100px%
+            left:100px;
+            top:50px;
+        }
+        #trd1, #trd2, #trd3, #trd4{
+            background:#506EE5;
+            box-shadow:;
+        }
+        footer{
+            position:absolute;
+            height:30px;
+            bottom:5%;
+            left:1%;
+            width:98%;
+        }
+        footer>#p2 {
+            pposition:absolute;
+            color:#651F71;
+            text-align:center;
+            font-size:25px;
+            background-color:#68B2F8;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            border-radius:5px;
+        }
+	footer>#p2 {
+	    opacity: 1;
+	    transition: opacity 1s cubic-bezier(0.12, 0, 0.39, 0) 0s;	    
+	}
+	footer>#p2:hover {
+	    opacity: 0.6;	    
+	}
+        </style>
+        <script></script>
+    </head>
+    
+    <body>
+        <p id="p1">This is a paragraph made by Yosafat</p>
+        
+        <table name="table" id="table1" classe="table">
+            <tr name="tr" id="trh">
+                <th>Table Header 1</th>
+                <th>Table Header 2</th>
+                <th>Table Header 3</th>
+                <th>Table Header 4</th>
+                <th>Table Header 5</th>
+                <th>Table Header 6</th>
+                <th>Table Header 7</th>
+            </tr>
+            <tr name="tr" id="trd1">
+                <td>Table Data 1</td>
+                <td>Table Data 2</td>
+                <td>Table Data 3</td>
+                <td>Table Data 4</td>
+                <td>Table Data 5</td>
+                <td>Table Data 6</td>
+                <td>Table Data 7</td>
+            </tr>
+            <tr name="tr" id="trd2">
+                <td>Table Data 1</td>
+                <td>Table Data 2</td>
+                <td>Table Data 3</td>
+                <td>Table Data 4</td>
+                <td>Table Data 5</td>
+                <td>Table Data 6</td>
+                <td>Table Data 7</td>
+            </tr>
+            <tr name="tr" id="trd3">
+                <td>Table Data 1</td>
+                <td>Table Data 2</td>
+                <td>Table Data 3</td>
+                <td>Table Data 4</td>
+                <td>Table Data 5</td>
+                <td>Table Data 6</td>
+                <td>Table Data 7</td>
+            </tr>
+            <tr name="tr" id="trd4">
+                <td>Table Data 1</td>
+                <td>Table Data 2</td>
+                <td>Table Data 3</td>
+                <td>Table Data 4</td>
+                <td>Table Data 5</td>
+                <td>Table Data 6</td>
+                <td>Table Data 7</td>
+            </tr>
+        </table>
+        
+        <footer>
+            <div id="p2">
+                <p id="p2">Footer Text</p>
+            </div>
+        </footer>
+    </body>
+</html>
